@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Deploy code to Lambda
-        uses: mariamrf/py-lambda-action@v1.0.1
+        uses: mariamrf/py-lambda-action@v1.0.0
         with:
           lambda_layer_arn: ${{ secrets.AWS_LAMBDA_LAYER }}
           lambda_function_name: ${{ secrets.AWS_FUNCTION_NAME }}
